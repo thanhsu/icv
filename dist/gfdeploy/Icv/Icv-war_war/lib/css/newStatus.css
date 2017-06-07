@@ -1,0 +1,11 @@
+body{
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: Verdana,serif;
+    background-color: #eee;
+}
+
+.container_newStatus{
+    border-style: ridge;
+}

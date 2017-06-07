@@ -1,0 +1,62 @@
+
+body{
+    background-color: #eee;
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
+}
+.padding_leght{
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.background-text{
+    border-radius: 2%;
+    background-color: #ffffff;
+  
+}
+
+.border_left{
+    border-color: threedface;
+    border-right-style: inherit;
+    border-right-width: 1px;
+     border-width: 1px;
+    
+}
+.border_all{
+    border-style: inset; 
+    border-width: 1px;
+   
+}
+.box-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-crystal{
+    background-color: white;
+    width: 5px;
+    height: 3px;
+}
+
+
+
+.input-size{
+    width: 150px;
+    height: 20px;
+        
+    
+}
+
+input[id=textSearch] {
+
+    width: 30px;
+    height:20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[id=textSearch]:focus {
+    width: 50%;
+}

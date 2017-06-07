@@ -1,0 +1,78 @@
+<style type="text/css">
+    .background-image{
+        background-color: #e8e8e8;
+        color: #737373;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-size: 85%;
+    }
+    
+</style>
+
+<footer class="footer background-image"><br/>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-3 col-md-offset-1 co-sm-offset-1 border_all">
+            <ul>
+                <li>About I-CV</li>
+                <li> We are a new project to help every body <strong>Create and Manager</strong> their CV. We provide many template of CV and send to the User a new method to create <strong>personal information online</strong>. </li>
+                <li><a href="#">Our policy</a></li>
+            </ul>
+        </div>        
+        <div class="col-md-3 col-sm-3 col-sm-offset-1 col-md-offset-1">
+            <h2>Contact</h2><hr/>
+            <ul>
+                <li><a href> Email:connect.icv@gmail.com</a></li>
+                <li>Phone number:(+84) 16-5406-6604</li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-3  col-sm-offset-1 col-md-offset-1">
+            <h2><a href="#" data-toggle="modal" data-target="#SendOpinion">Send your opinion.</a></h2>
+            <p>We want to learn from every body and we will help ICV more complete</p>
+                            <div class="modal fade" id="SendOpinion" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Send Your Opinion </h4>
+                                        </div>
+                                        <div class="modal-body" id="modal_body_editActivity">
+                                            <form action="getComment?commentAction=newComment" method="Post">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-2">
+                                                        <p>Your Opinion:</p>
+                                                    </div>
+                                                    <div class="col-md-9 col-sm-9" >
+                                                        <input class="form-control" style="height:100px; line-break: auto;" type="text" name="commentOpinion" placeholder="Your Opinion" autofocus required/>
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="row">
+                                                    <input class="form-control btn btn-primary btn-block" type="submit" value="Send"/>
+                                                    
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>            
+            
+        </div>
+        
+    </div>
+    <div class="copyright row">
+        <div class="col-md-5 col-sm-5 col-sm-offset-1 col-md-offset-1">© 2017, Copyright <a href="http://${pageContext.request.serverName}:${pageContext.request.serverPort}/Icv-war/index.jsp">I-CV</a> - Website manager your CV.</div>
+       
+        <div class="col-md-2 col-sm-2 col-sm-offset-3 col-md-offset-3" id="totalUser">Total User Online: <%= session.getAttribute("totalUserOnline") %> </div>
+    </div>
+    </div>
+    
+</footer>

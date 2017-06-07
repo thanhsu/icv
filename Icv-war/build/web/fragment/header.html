@@ -1,0 +1,40 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Manager Your CV</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#">I-CV</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="http://${pageContext.request.serverName}:${pageContext.request.serverPort}/Icv-war/index.jsp">Home</a></li>      
+            <li><a  href="AccountControl?accountAction=register">Register</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-target="#">More<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="Stories/about.jsp">About ICV</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Forum</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Contact Us</li>
+                <li><a href="#">Send Email</a></li>
+                <li><a href="#">_______</a></li>
+              </ul>
+            </li>
+          </ul>
+            <form class="form-group-sm" action="AccountControl?accountAction=login" method="Post" style="padding-top: 10px;">
+          <ul class="nav navbar-nav navbar-right ">
+              <li><input class="form-control input-size center-block" type="text" name="username" placeholder="User Name" required autofocus/></li>
+              <li><input class="form-control input-size center-block" style="margin-left: 5px;" type="password" name="password" placeholder="Password" required/></li>
+              <li><button class="btn btn-sm btn-primary btn-block center-block"  style=" margin-left: 20px;" type="submit">Sign in</button></li> 
+              <li><a href="AccountControl?accountAction=forgotPassword" style="margin-left: 20px; color: #357ebd" ><u><em>Forgot your password</em></u></a> </li>
+          </ul>
+         </form>
+        </div><!--/.nav-collapse -->
+      </div>
+</nav>
